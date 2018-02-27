@@ -11,7 +11,7 @@ console.log(multiply(2, 3));
 console.log(multiply(5));
 
 // Ex. 3
-const average = (...args) => args.reduce((total, amount) => total + amount) / args.length;
+const average = (...args) => args.reduce((sum, element) => sum + element) / args.length;
 
 console.log(average(2, 2, 2));
 
@@ -22,6 +22,6 @@ console.log(average(...grades));
 
 // Ex. 5
 const data = [1, 4, 'Iwona', false, 'Nowak'];
-const [ , , firstname, , lastname] = data;
+const [ , , firstName, , lastName] = data;
 
-console.log(`${firstname} ${lastname}`);
+console.log(`${firstName} ${lastName}`);

@@ -21,8 +21,8 @@ var average = function average() {
     args[_key] = arguments[_key];
   }
 
-  return args.reduce(function (total, amount) {
-    return total + amount;
+  return args.reduce(function (sum, element) {
+    return sum + element;
   }) / args.length;
 };
 
@@ -35,8 +35,8 @@ console.log(average.apply(undefined, grades));
 
 // Ex. 5
 var data = [1, 4, 'Iwona', false, 'Nowak'];
-var firstname = data[2],
-    lastname = data[4];
+var firstName = data[2],
+    lastName = data[4];
 
 
-console.log(firstname + ' ' + lastname);
+console.log(firstName + ' ' + lastName);
