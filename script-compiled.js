@@ -7,9 +7,9 @@ var string2 = 'World';
 console.log(string1 + ' ' + string2);
 
 // Ex. 2
-var multiply = function multiply(a) {
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-  return a * b;
+var multiply = function multiply(x) {
+  var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  return x * y;
 };
 
 console.log(multiply(2, 3));

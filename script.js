@@ -5,7 +5,7 @@ const string2 = 'World';
 console.log(`${string1} ${string2}`);
 
 // Ex. 2
-const multiply = (a, b = 1) => a * b;
+const multiply = (x, y = 1) => x * y;
 
 console.log(multiply(2, 3));
 console.log(multiply(5));
